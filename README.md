@@ -1,2 +1,2 @@
 # asiabill_plugin_opencart
- Opencart插
+ Opencart插件
