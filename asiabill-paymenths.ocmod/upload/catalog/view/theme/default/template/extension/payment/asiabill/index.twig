@@ -1,0 +1,23 @@
+<div class="buttons">
+    <div class="pull-right" >
+        <input id="button-confirm" class="btn btn-primary" type="button" data-loading-text="{{ text_loading }}" value="{{ button_confirm }}" >
+    </div>
+</div>
+<script type="text/javascript"><!--
+	$("#button-confirm").bind("click",function(){
+		$.ajax(
+		    {
+			    type: "GET",
+			    url: "{{ confirm_url }}",
+                beforeSend: function()
+                {
+                    $('#button-confirm').attr('disabled', true);
+		        },
+                success: function()
+                {
+                    location = '{{ form_url }}';
+                }
+		}
+		);
+	});
+//--></script>

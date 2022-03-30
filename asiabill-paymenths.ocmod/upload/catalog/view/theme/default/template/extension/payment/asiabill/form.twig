@@ -1,0 +1,14 @@
+{{ header }}
+<div id="common-request" class="container" >
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <form action="{{ action_url }}" method="post" id="asiabill_pay" >
+            {% for parameter in parameters %}
+                <input type="hidden" name="{{ parameter.key }}" value='{{ parameter.val }}'>
+            {% endfor %}
+            </form>
+        </div>
+        <script type="text/javascript" >document.getElementById("asiabill_pay").submit();</script>
+    </div>
+</div>
+{{ footer }}
