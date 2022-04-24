@@ -1,5 +1,5 @@
 
-Asiabill Magento2 支付插件
+Asiabill Opencart 支付插件
 =
 
 __仅适用于opencart3.x版本__
